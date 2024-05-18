@@ -1,5 +1,5 @@
 NAME = ex00
-CX = g++
+CX = c++
 CFLAGS  = -Wall -Wextra -Werror -std=c++98
 SRC = ex00.cpp
 OBJ = $(SRC:.cpp=.o)

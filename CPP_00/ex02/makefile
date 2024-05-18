@@ -1,11 +1,10 @@
-NAME = phonebook
+NAME = account
 CX = c++
 CFLAGS  = -Wall -Wextra -Werror -std=c++98
 OBJDIR = obj
 OBJ = $(SRC:%.cpp=$(OBJDIR)/%.o)
-SRC =	contact.class.cpp\
-		phone_book.class.cpp\
-		main.cpp
+SRC =	Account.cpp\
+		tests.cpp
 
 all: $(NAME)
 
