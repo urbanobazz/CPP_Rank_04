@@ -6,13 +6,11 @@
 /*   By: ubazzane <ubazzane@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 17:17:21 by ubazzane          #+#    #+#             */
-/*   Updated: 2024/05/17 17:28:38 by ubazzane         ###   ########.fr       */
+/*   Updated: 2024/05/18 12:56:35 by ubazzane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "phone_book.class.hpp"
-
-void	print_header(void);
 
 int	main(void)
 {
@@ -33,11 +31,6 @@ int	main(void)
 			system("clear");
 			std::cout << "PhoneBook exited successfully!" << std::endl;
 			return (0);
-		}
-		else
-		{
-			//phoneBook.print_header();
-			std::cout << "Invalid command. Please try again." << std::endl;
 		}
 	}
 	return (0);

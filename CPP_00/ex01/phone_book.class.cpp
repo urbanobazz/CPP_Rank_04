@@ -6,7 +6,7 @@
 /*   By: ubazzane <ubazzane@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 17:32:04 by ubazzane          #+#    #+#             */
-/*   Updated: 2024/05/17 17:30:43 by ubazzane         ###   ########.fr       */
+/*   Updated: 2024/05/18 12:56:10 by ubazzane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -117,6 +117,8 @@ void	PhoneBook::searchContact(void) {
 			std::cout << "Nickname: " << _contacts[i].nickname << std::endl;
 			std::cout << "Phone Number: " << _contacts[i].phoneNumber << std::endl;
 			std::cout << "Darkest Secret: " << _contacts[i].darkestSecret << std::endl;
+			std::cout << "*************************************************" << std::endl;
+			std::cin.ignore(256, '\n');
 			return;
 		}
 	}
