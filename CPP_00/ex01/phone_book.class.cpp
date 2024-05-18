@@ -6,7 +6,7 @@
 /*   By: ubazzane <ubazzane@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 17:32:04 by ubazzane          #+#    #+#             */
-/*   Updated: 2024/05/18 17:16:22 by ubazzane         ###   ########.fr       */
+/*   Updated: 2024/05/18 20:13:27 by ubazzane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,7 +107,10 @@ void	PhoneBook::searchContact(void) {
 		{
 			std::cin.clear();
 			std::cin.ignore(256, '\n');
-			std::cout << "Invalid index! It must in between 0 and " << _contactCount - 1 << std::endl;
+			if (_contactCount >= _maxIndex)
+				std::cout << "Invalid index! It must in between 0 and " << _maxIndex - 1 << std::endl;
+			else
+				std::cout << "Invalid index! It must in between 0 and " << _contactCount - 1 << std::endl;
 		}
 		else
 		{
