@@ -6,7 +6,7 @@
 /*   By: ubazzane <ubazzane@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 16:10:26 by ubazzane          #+#    #+#             */
-/*   Updated: 2024/05/20 18:07:17 by ubazzane         ###   ########.fr       */
+/*   Updated: 2024/05/20 18:19:18 by ubazzane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int main(int argc, char **argv)
 {
 	if (argc != 2)
 	{
-		std::cerr << "Usage: ./harl <level>" << std::endl;
+		std::cerr << "Usage: ./harlFilter <level>" << std::endl;
 		return (1);
 	}
 	Harl harl;
