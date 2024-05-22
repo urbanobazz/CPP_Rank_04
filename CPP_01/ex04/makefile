@@ -4,7 +4,7 @@ CFLAGS  = -Wall -Wextra -Werror -std=c++98 -g
 OBJDIR = obj
 OBJ = $(SRC:%.cpp=$(OBJDIR)/%.o)
 SRC =	main.cpp \
-		replace.cpp \
+		Replace.cpp \
 
 all: $(NAME)
 

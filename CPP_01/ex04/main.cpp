@@ -6,11 +6,11 @@
 /*   By: ubazzane <ubazzane@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 20:25:00 by ubazzane          #+#    #+#             */
-/*   Updated: 2024/05/20 15:57:56 by ubazzane         ###   ########.fr       */
+/*   Updated: 2024/05/22 16:59:52 by ubazzane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "replace.hpp"
+#include "Replace.hpp"
 
 int main(int argc, char **argv)
 {

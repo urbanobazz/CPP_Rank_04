@@ -3,8 +3,8 @@ CX = c++
 CFLAGS  = -Wall -Wextra -Werror -std=c++98
 OBJDIR = obj
 OBJ = $(SRC:%.cpp=$(OBJDIR)/%.o)
-SRC =	contact.class.cpp\
-		phone_book.class.cpp\
+SRC =	Contact.cpp\
+		PhoneBook.cpp\
 		main.cpp
 
 all: $(NAME)

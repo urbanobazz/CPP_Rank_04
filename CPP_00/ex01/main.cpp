@@ -6,11 +6,11 @@
 /*   By: ubazzane <ubazzane@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 17:17:21 by ubazzane          #+#    #+#             */
-/*   Updated: 2024/05/22 16:52:09 by ubazzane         ###   ########.fr       */
+/*   Updated: 2024/05/22 16:57:39 by ubazzane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "phone_book.class.hpp"
+#include "PhoneBook.hpp"
 
 int	main(void)
 {

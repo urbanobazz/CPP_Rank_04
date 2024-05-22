@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   phone_book.class.hpp                               :+:      :+:    :+:   */
+/*   PhoneBook.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ubazzane <ubazzane@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 17:23:23 by ubazzane          #+#    #+#             */
-/*   Updated: 2024/05/17 17:01:37 by ubazzane         ###   ########.fr       */
+/*   Updated: 2024/05/22 16:55:49 by ubazzane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PHONE_BOOK_CLASS_HPP
 # define PHONE_BOOK_CLASS_HPP
 
-# include "contact.class.hpp"
+# include "Contact.hpp"
 # include <iomanip>
 
 class	PhoneBook {
