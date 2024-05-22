@@ -6,7 +6,7 @@
 /*   By: ubazzane <ubazzane@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 17:32:04 by ubazzane          #+#    #+#             */
-/*   Updated: 2024/05/18 20:13:27 by ubazzane         ###   ########.fr       */
+/*   Updated: 2024/05/22 16:50:34 by ubazzane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,30 +51,40 @@ void	PhoneBook::addContact(void) {
 		print_header();
 		std::cout << "Please enter the contact's first name: ";
 		std::getline(std::cin, value);
+		if (std::cin.eof())
+			return ;
 		newContact.setFirstName(value);
 	}
 	while (newContact.getLastName().empty()) {
 		print_header();
 		std::cout << "Please enter the contact's last name: ";
 		std::getline(std::cin, value);
+		if (std::cin.eof())
+			return ;
 		newContact.setLastName(value);
 	}
 	while (newContact.getNickname().empty()) {
 		print_header();
 		std::cout << "Please enter the contact's nickname: ";
 		std::getline(std::cin, value);
+		if (std::cin.eof())
+			return ;
 		newContact.setNickname(value);
 	}
 	while (newContact.getPhoneNumber().empty()) {
 		print_header();
 		std::cout << "Please enter the contact's phone number: ";
 		std::getline(std::cin, value);
+		if (std::cin.eof())
+			return ;
 		newContact.setPhoneNumber(value);
 	}
 	while (newContact.getDarkestSecret().empty()) {
 		print_header();
 		std::cout << "Please enter the contact's darkest secret: ";
 		std::getline(std::cin, value);
+		if (std::cin.eof())
+			return ;
 		newContact.setDarkestSecret(value);
 	}
 	this->_contacts[index] = newContact;

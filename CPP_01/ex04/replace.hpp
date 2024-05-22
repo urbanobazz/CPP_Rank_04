@@ -6,13 +6,14 @@
 /*   By: ubazzane <ubazzane@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 14:39:27 by ubazzane          #+#    #+#             */
-/*   Updated: 2024/05/20 15:18:36 by ubazzane         ###   ########.fr       */
+/*   Updated: 2024/05/22 16:32:18 by ubazzane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <cstdlib>
 
 class	Replace
 {

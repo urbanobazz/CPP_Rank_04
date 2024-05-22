@@ -6,7 +6,7 @@
 /*   By: ubazzane <ubazzane@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 14:39:16 by ubazzane          #+#    #+#             */
-/*   Updated: 2024/05/20 15:54:21 by ubazzane         ###   ########.fr       */
+/*   Updated: 2024/05/22 16:34:08 by ubazzane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,24 +17,24 @@ Replace::Replace(std::string filename, std::string s1, std::string s2) : _filena
 	if (_s1.empty() || _s2.empty())
 	{
 		std::cerr << "Error: Empty string" << std::endl;
-		exit(1);
+		std::exit(1);
 	}
 	if (s1 == s2)
 	{
 		std::cerr << "Error: s1 and s2 are the same" << std::endl;
-		exit(1);
+		std::exit(1);
 	}
-	_file.open(_filename);
+	_file.open(_filename.c_str());
 	if (!_file.is_open())
 	{
 		std::cerr << "Error: Cannot open file" << std::endl;
-		exit(1);
+		std::exit(1);
 	}
-	_output.open(_filename + ".replace");
+	_output.open((_filename + ".replace").c_str());
 	if (!_output.is_open())
 	{
 		std::cerr << "Error: Cannot create output file" << std::endl;
-		exit(1);
+		std::exit(1);
 	}
 }
 

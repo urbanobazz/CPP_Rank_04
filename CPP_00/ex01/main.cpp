@@ -6,7 +6,7 @@
 /*   By: ubazzane <ubazzane@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 17:17:21 by ubazzane          #+#    #+#             */
-/*   Updated: 2024/05/18 12:56:35 by ubazzane         ###   ########.fr       */
+/*   Updated: 2024/05/22 16:52:09 by ubazzane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ int	main(void)
 	{
 		std::cout << "Enter a command: ";
 		std::getline(std::cin, command);
+		if (std::cin.eof())
+			return (1);
 		if (command == "ADD")
 			phoneBook.addContact();
 		else if (command == "SEARCH")

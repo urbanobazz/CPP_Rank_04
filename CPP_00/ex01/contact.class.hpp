@@ -6,7 +6,7 @@
 /*   By: ubazzane <ubazzane@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 17:19:43 by ubazzane          #+#    #+#             */
-/*   Updated: 2024/05/18 16:46:59 by ubazzane         ###   ########.fr       */
+/*   Updated: 2024/05/22 15:50:11 by ubazzane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <iostream>
 # include <string>
+#include <cstdlib>
 
 class	Contact {
 
