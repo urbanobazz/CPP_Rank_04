@@ -6,7 +6,7 @@
 /*   By: ubazzane <ubazzane@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/24 15:42:33 by ubazzane          #+#    #+#             */
-/*   Updated: 2024/05/24 15:56:17 by ubazzane         ###   ########.fr       */
+/*   Updated: 2024/05/24 16:05:13 by ubazzane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ class FragTrap : public ClapTrap
 		~FragTrap();
 		FragTrap & operator=(const FragTrap &other);
 
-		void attack(std::string const & target);
 		void highFivesGuys(void);
 };
 
