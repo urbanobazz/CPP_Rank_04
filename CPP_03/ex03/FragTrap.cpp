@@ -6,7 +6,7 @@
 /*   By: ubazzane <ubazzane@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/24 15:42:55 by ubazzane          #+#    #+#             */
-/*   Updated: 2024/05/24 17:05:11 by ubazzane         ###   ########.fr       */
+/*   Updated: 2024/05/24 17:29:03 by ubazzane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,18 +40,11 @@ FragTrap & FragTrap::operator=(const FragTrap &other)
 	std::cout << "FragTrap assignation operator called." << std::endl;
 	if (this == &other)
 		return *this;
-	_name = other._name;
-	_hitPoints = other._hitPoints;
-	_energyPoints = other._energyPoints;
-	_attackDamage = other._attackDamage;
+	_name = other.getName();
+	_hitPoints = other.getHitPoints();
+	_energyPoints = other.getEnergyPoints();
+	_attackDamage = other.getAttackDamage();
 	return *this;
-}
-
-void FragTrap::attack(std::string const &target)
-{
-	_energyPoints--;
-	std::cout << "FragTrap " << _name << " attacks " << target
-	<< ", causing " << _attackDamage << " points of damage!" << std::endl;
 }
 
 void FragTrap::highFivesGuys(void)
