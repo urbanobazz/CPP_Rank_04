@@ -6,7 +6,7 @@
 /*   By: ubazzane <ubazzane@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/24 11:17:00 by ubazzane          #+#    #+#             */
-/*   Updated: 2024/05/25 13:55:13 by ubazzane         ###   ########.fr       */
+/*   Updated: 2024/05/27 12:55:22 by ubazzane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 int main(void)
 {
-	DiamondTrap player1("SpongeBob");
+	DiamondTrap player1("Diamond");
 	std::cout << std::endl;
-	ScavTrap player2("Patrik");
+	ScavTrap player2("Scav");
 	std::cout << std::endl;
-	FragTrap player3("Squidward");
+	FragTrap player3("Frag");
 	std::cout << std::endl;
-	ClapTrap player4("Gary");
+	ClapTrap player4("Clap");
 
 	std::cout << std::endl;
 	std::cout << "--------------------------------------------------------------------" << std::endl;
