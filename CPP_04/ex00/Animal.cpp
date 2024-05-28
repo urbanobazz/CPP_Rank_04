@@ -6,13 +6,13 @@
 /*   By: ubazzane <ubazzane@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/25 16:01:39 by ubazzane          #+#    #+#             */
-/*   Updated: 2024/05/28 11:40:48 by ubazzane         ###   ########.fr       */
+/*   Updated: 2024/05/28 12:31:24 by ubazzane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Animal.hpp"
 
-Animal::Animal(void) {
+Animal::Animal(void) : _type("Animal"){
 	std::cout << "Animal default constructor called" << std::endl;
 }
 

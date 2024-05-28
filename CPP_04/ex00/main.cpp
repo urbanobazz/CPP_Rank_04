@@ -6,7 +6,7 @@
 /*   By: ubazzane <ubazzane@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/25 16:01:20 by ubazzane          #+#    #+#             */
-/*   Updated: 2024/05/28 12:10:05 by ubazzane         ###   ########.fr       */
+/*   Updated: 2024/05/28 12:34:52 by ubazzane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,19 +17,20 @@
 int main()
 {
 	const Animal* meta = new Animal();
-	const Animal* j = new Dog();
-	const Animal* i = new Cat();
+	const Animal* dog = new Dog();
+	const Animal* cat = new Cat();
 	std::cout << std::endl;
-	std::cout << j->getType() << " " << std::endl;
-	std::cout << i->getType() << " " << std::endl;
+	std::cout << meta->getType() << " meta" << std::endl;
+	std::cout << dog->getType() << " dog" << std::endl;
+	std::cout << cat->getType() << " cat" << std::endl;
 	std::cout << std::endl;
-	i->makeSound(); //will output the cat sound!
-	j->makeSound(); //will output the dog sound!
 	meta->makeSound(); //will output the animal sound!
+	dog->makeSound(); //will output the dog sound!
+	cat->makeSound(); //will output the cat sound!
 	std::cout << std::endl;
 	delete meta;
-	delete j;
-	delete i;
+	delete dog;
+	delete cat;
 	return 0;
 }
 
@@ -39,14 +40,19 @@ int main()
 int main()
 {
 	const WrongAnimal* meta = new WrongAnimal();
-	const WrongAnimal* i = new WrongCat();
+	const WrongAnimal* wanimal = new WrongCat();
+	const WrongCat* wcat = new WrongCat();
 	std::cout << std::endl;
-	std::cout << i->getType() << " " << std::endl;
+	std::cout << meta->getType() << " meta" << std::endl;
+	std::cout << wanimal->getType() << " wanimal" << std::endl;
+	std::cout << wcat->getType() << " wcat" << std::endl;
 	std::cout << std::endl;
-	i->makeSound();
 	meta->makeSound();
+	wanimal->makeSound(); // unable to call makeSound() from WrongCat
+	wcat->makeSound(); //will output the cat sound!
 	std::cout << std::endl;
 	delete meta;
-	delete i;
+	delete wanimal;
+	delete wcat;
 	return 0;
 } */
