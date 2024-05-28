@@ -6,7 +6,7 @@
 /*   By: ubazzane <ubazzane@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/28 11:59:06 by ubazzane          #+#    #+#             */
-/*   Updated: 2024/05/28 12:01:00 by ubazzane         ###   ########.fr       */
+/*   Updated: 2024/05/28 13:51:01 by ubazzane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,10 @@ class WrongAnimal
 
 	public:
 		WrongAnimal(void);
-		WrongAnimal(WrongAnimal const &src);
+		WrongAnimal(WrongAnimal const &other);
 		~WrongAnimal(void);
 
-		WrongAnimal &operator=(WrongAnimal const &rhs);
+		WrongAnimal &operator=(WrongAnimal const &other);
 
 		std::string getType(void) const;
 		void makeSound(void) const;
