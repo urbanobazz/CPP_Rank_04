@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Materia",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/ex03/materia",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/ex03",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for lldb",
+                    "text": "settings set target.prefer-dynamic-value run-target",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build"
+        }
+    ]
+}

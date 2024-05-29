@@ -6,7 +6,7 @@
 /*   By: ubazzane <ubazzane@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/25 16:02:53 by ubazzane          #+#    #+#             */
-/*   Updated: 2024/05/28 15:08:09 by ubazzane         ###   ########.fr       */
+/*   Updated: 2024/05/28 16:56:22 by ubazzane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,8 @@ Cat &Cat::operator=( Cat const &other ) {
 	std::cout << "Cat assignation operator called" << std::endl;
 	if (this != &other)
 	{
+		delete this->_brain;
 		this->_brain = new Brain(*other._brain);
-		this->_type = other._type;
 		for (int i = 0; i < 100; i++)
 			this->_brain->setIdea(i, other._brain->getIdea(i));
 	}
