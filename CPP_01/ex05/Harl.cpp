@@ -6,7 +6,7 @@
 /*   By: ubazzane <ubazzane@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 16:11:35 by ubazzane          #+#    #+#             */
-/*   Updated: 2024/05/20 17:29:38 by ubazzane         ###   ########.fr       */
+/*   Updated: 2024/05/29 18:16:19 by ubazzane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ Harl::~Harl() {return;}
 void Harl::complain(std::string level) const
 {
 	void (Harl::*member_funcs[4])() const = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
-	std::string levels[4] = {"debug", "info", "warning", "error"};
+	std::string levels[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 	bool matchFound = false;
 
 	for (int i = 0; i < 4; i++)
