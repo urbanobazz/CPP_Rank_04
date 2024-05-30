@@ -6,7 +6,7 @@
 /*   By: ubazzane <ubazzane@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/24 11:17:00 by ubazzane          #+#    #+#             */
-/*   Updated: 2024/05/27 12:55:22 by ubazzane         ###   ########.fr       */
+/*   Updated: 2024/05/30 17:02:00 by ubazzane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,13 @@ int main(void)
 	<< " Energy Points: " << player4.getEnergyPoints() << std::endl;
 	std::cout << "--------------------------------------------------------------------" << std::endl;
 	std::cout << std::endl;
+
+
+	std::cout << "---------------------Functions inheritance test---------------------" << std::endl;
+	player1.attack("Frag");
+	player1.guardGate();
+	player1.highFivesGuys();
+	std::cout << std::endl;
+
 	return 0;
 }
