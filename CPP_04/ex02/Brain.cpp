@@ -6,7 +6,7 @@
 /*   By: ubazzane <ubazzane@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/28 13:42:38 by ubazzane          #+#    #+#             */
-/*   Updated: 2024/05/28 13:56:46 by ubazzane         ###   ########.fr       */
+/*   Updated: 2024/05/31 11:45:21 by ubazzane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,11 @@
 Brain::Brain(void) {
 	std::cout << "Brain default constructor called" << std::endl;
 	for (int i = 0; i < 10; i++)
-		this->ideas[i] = "Idea " + std::to_string(i);
+	{
+		std::stringstream ss;
+		ss << "Idea " << i;
+		this->ideas[i] = ss.str();
+	}
 }
 
 Brain::Brain(Brain const &other) {

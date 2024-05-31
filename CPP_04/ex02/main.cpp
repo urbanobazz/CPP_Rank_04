@@ -6,7 +6,7 @@
 /*   By: ubazzane <ubazzane@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/25 16:01:20 by ubazzane          #+#    #+#             */
-/*   Updated: 2024/05/28 15:51:55 by ubazzane         ###   ########.fr       */
+/*   Updated: 2024/05/31 15:15:51 by ubazzane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,25 @@
 
 int main()
 {
+
+	std::cout << "=========================Subject's test=============================" << std::endl;
+	const int size = 10;
+	AAnimal* animals[size];
+
+	for (int i = 0; i < size / 2; ++i)
+		animals[i] = new Dog();
+	for (int i = size / 2; i < size; ++i)
+		animals[i] = new Cat();
+	for(int i = 0; i < size; i++)
+	{
+		std::cout << "Animal[" << i << "]: " << animals[i]->getType() << std::endl;
+		animals[0]->makeSound();
+	}
+	for(int i = 0; i < size; i++)
+		delete animals[i];
+
+
+	std::cout << "============================My tests===============================" << std::endl;
 	std::cout << "----------------Dog tests--------------------" << std::endl;
 	// Create a Dog object
 	Dog dog1;
@@ -58,9 +77,6 @@ int main()
 	std::cout << "Cat1's idea: " << cat1.getBrain()->getIdea(0) << std::endl;
 	std::cout << "Cat2's idea after modifying Cat1: " << cat2.getBrain()->getIdea(0) << std::endl;
 	std::cout << "---------------------------------------------" << std::endl;
-
-	// Try to create an animal object to generate compile error
-	//AAnimal animal;
 
 	return 0;
 }

@@ -6,19 +6,18 @@
 /*   By: ubazzane <ubazzane@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/25 16:02:16 by ubazzane          #+#    #+#             */
-/*   Updated: 2024/05/28 16:57:38 by ubazzane         ###   ########.fr       */
+/*   Updated: 2024/05/31 15:15:26 by ubazzane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Dog.hpp"
 
-Dog::Dog( void ) {
+Dog::Dog( void ) : _brain(new Brain()) {
 	std::cout << "Dog default constructor called" << std::endl;
 	this->_type = "Dog";
-	_brain = new Brain();
 }
 
-Dog::Dog( Dog const &other ) {
+Dog::Dog( Dog const &other ) : _brain(NULL) {
 	std::cout << "Dog copy constructor called" << std::endl;
 	*this = other;
 }
@@ -34,6 +33,7 @@ Dog &Dog::operator=( Dog const &other ) {
 	{
 		delete this->_brain;
 		this->_brain = new Brain(*other._brain);
+		this->_type = other._type;
 		for (int i = 0; i < 100; i++)
 			this->_brain->setIdea(i, other._brain->getIdea(i));
 	}

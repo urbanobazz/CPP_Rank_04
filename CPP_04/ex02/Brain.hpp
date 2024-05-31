@@ -6,7 +6,7 @@
 /*   By: ubazzane <ubazzane@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/28 13:42:27 by ubazzane          #+#    #+#             */
-/*   Updated: 2024/05/28 14:04:23 by ubazzane         ###   ########.fr       */
+/*   Updated: 2024/05/31 11:45:56 by ubazzane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <iostream>
 # include <string>
+# include <sstream>
 
 class Brain {
 	public:
