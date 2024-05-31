@@ -6,7 +6,7 @@
 /*   By: ubazzane <ubazzane@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/25 16:01:20 by ubazzane          #+#    #+#             */
-/*   Updated: 2024/05/31 15:11:47 by ubazzane         ###   ########.fr       */
+/*   Updated: 2024/05/31 15:48:10 by ubazzane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 
 int main()
 {
-
 	std::cout << "=========================Subject's test=============================" << std::endl;
 	const int size = 10;
 	Animal* animals[size];
@@ -28,7 +27,7 @@ int main()
 	for(int i = 0; i < size; i++)
 	{
 		std::cout << "Animal[" << i << "]: " << animals[i]->getType() << std::endl;
-		animals[0]->makeSound();
+		animals[i]->makeSound();
 	}
 	for(int i = 0; i < size; i++)
 		delete animals[i];

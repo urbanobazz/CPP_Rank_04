@@ -6,13 +6,13 @@
 /*   By: ubazzane <ubazzane@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/25 16:02:53 by ubazzane          #+#    #+#             */
-/*   Updated: 2024/05/31 15:10:48 by ubazzane         ###   ########.fr       */
+/*   Updated: 2024/05/31 15:51:30 by ubazzane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cat.hpp"
 
-Cat::Cat( void ) : _brain(new Brain()){
+Cat::Cat( void ) : _brain(new Brain()) {
 	std::cout << "Cat default constructor called" << std::endl;
 	this->_type = "Cat";
 }
